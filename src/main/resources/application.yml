@@ -1,0 +1,27 @@
+spring:
+  datasource:
+    username: root
+    password: primesoft
+    url: jdbc:mysql://localhost:3306/jrtp
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+      dialect: org.hibernate.dialect.MySQLDialect
+    show-sql: true
+    
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: sagrawal@primesoft.net
+    password: s25prime
+    properties:
+     mail:
+      smtp:
+       auth: true
+       starttls:
+        enable: true
+        
+ 
+  server:
+   port: 8080
